@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaptopGamer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/36fbafae95.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <head>
+        <nav class="imagen-logo">
+            <img src="assets/img/imagen1.png" alt="Logo de Lapto">
+        </nav>
+        <p>
+            Lapto Gamer AMD
+        </p>
+    </head>
+    <main>
+        <section class="amount">
+            <input class="cantidades" type="text" value="Cantidad">
+        </section>
+        <section class="color-type">
+            <input class="colores" type="text" value="Color">
+        </section>
+
+        <section class="product-price">
+            <p class="price">Precio: $400.000 </p>
+        </section>
+
+        <section class="calculo-total">
+            <button >Calcular Total</button>   
+        </section>
+        
+
+    </main>
+
+
+    <script>
+        imagen = document.querySelector("img");
+        imagen.style.borderRadius = "25%";
+        cantidad = document.querySelector(".cantidades");
+        cantidad.style.borderRadius = "8px";
+        cantidad.style.height = "2rem";
+        cantidad.style.width = "15rem";
+        cantidad.style.color = "grey";
+        cantidad.style.fontSize = "1rem";
+        cantidad.style.paddingLeft = "1rem";
+        color = document.querySelector(".colores");
+        color.style.borderRadius = "8px";
+        color.style.height = "2rem";
+        color.style.width = "15rem";
+        color.style.color = "grey";
+        color.style.fontSize = "1rem";
+        color.style.paddingLeft = "1rem";
+        total = document.querySelector("button");
+        total.style.width = "10rem";
+        total.style.borderRadius = "8px";
+        total.style.height = "2.5rem";
+        text = document.querySelector(".price");
+        text.style.fontWeight = "300";
+
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
