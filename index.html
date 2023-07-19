@@ -37,7 +37,7 @@
                 <p class="price">Precio: $400.000 </p>
             </section>
             <section class="calculo-total">
-                <button onclick ="
+                <button onclick="
                 let valorTotal = 0
                 const precio = 400000
                 cantidad = document.querySelector('.cantidades')
@@ -55,8 +55,11 @@
         <div class="product-final">
             <p>Total: <span id="resultadoTotal"> </span> </p>
             <p>Cantidad: <span id="cantidadTotal"> </span> </p>
-            <p>Color: <div id="colorTotal"> </div> </p>
+            <div class="position">
+                <p>Color: <div id="colorTotal"> </div> </p>
+            </div>
         </div>
+       
     </main>
     <script>
         imagen = document.querySelector("img");
@@ -81,13 +84,6 @@
         total.style.height = "2.5rem";
         text = document.querySelector(".price");
         text.style.fontWeight = "300";
-
-
-
-
-
-
-
 
     </script>
 </body>
