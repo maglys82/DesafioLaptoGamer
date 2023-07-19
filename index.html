@@ -18,34 +18,46 @@
 
 <body>
 
-    <head>
-        <nav class="imagen-logo">
-            <img src="assets/img/imagen1.png" alt="Logo de Lapto">
-        </nav>
-        <p>
-            Lapto Gamer AMD
-        </p>
-    </head>
     <main>
-        <section class="amount">
-            <input class="cantidades" type="text" value="Cantidad">
-        </section>
-        <section class="color-type">
-            <input class="colores" type="text" value="Color">
-        </section>
+        <div class="card">
+            <div class="imagen-logo">
+                <img src="assets/img/imagen1.png" alt="Logo de Lapto">
+            </div>
+            <p>
+                Laptop Gamer AMD
+            </p>
+            <section class="amount">
+                <input class="cantidades" type="text" placeholder="Cantidad">
+            </section>
+            <section class="color-type">
+                <input class="colores" type="text" placeholder="Color">
+            </section>
 
-        <section class="product-price">
-            <p class="price">Precio: $400.000 </p>
-        </section>
-
-        <section class="calculo-total">
-            <button >Calcular Total</button>   
-        </section>
-        
-
+            <section class="product-price">
+                <p class="price">Precio: $400.000 </p>
+            </section>
+            <section class="calculo-total">
+                <button onclick ="
+                let valorTotal = 0
+                const precio = 400000
+                cantidad = document.querySelector('.cantidades')
+                color = document.querySelector('.colores')
+                valorTotal = cantidad.value * precio
+                elemento_resultado = document.querySelector('#resultadoTotal')
+                elemento_resultado.innerHTML = '$'+ valorTotal
+                elemento_cantidad = document.querySelector('#cantidadTotal')
+                elemento_cantidad.innerHTML = cantidad.value
+                elemento_color = document.querySelector('#colorTotal')
+                elemento_color.style.backgroundColor = color.value
+            ">Calcular Total</button>
+            </section>
+        </div>
+        <div class="product-final">
+            <p>Total: <span id="resultadoTotal"> </span> </p>
+            <p>Cantidad: <span id="cantidadTotal"> </span> </p>
+            <p>Color: <div id="colorTotal"> </div> </p>
+        </div>
     </main>
-
-
     <script>
         imagen = document.querySelector("img");
         imagen.style.borderRadius = "25%";
@@ -71,7 +83,8 @@
         text.style.fontWeight = "300";
 
 
-        
+
+
 
 
 

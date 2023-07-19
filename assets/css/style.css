@@ -4,9 +4,19 @@
     
 }
 
-body{
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    
+}
+
+.card{
     background-color: rgb(105,169,54);
     font-family: roboto;
+    padding: 2rem;
+
     
     
 }
@@ -50,4 +60,15 @@ p{
 button{
     background-color: rgb(253,164,0);
     color: white;
+}
+
+.product-final p{
+    color: black;
+}
+
+#colorTotal{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: black;
 }
