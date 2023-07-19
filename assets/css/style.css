@@ -8,7 +8,7 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    gap: 1rem;
+    gap: 2rem;
     
 }
 
@@ -38,7 +38,7 @@ p{
 .amount{
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .color-type{
@@ -61,6 +61,7 @@ button{
 .product-final p{
     color: black;
     
+    
 }
 
 #colorTotal{
@@ -74,6 +75,6 @@ button{
 .position  {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-
+    gap: 5px;
 }
+
